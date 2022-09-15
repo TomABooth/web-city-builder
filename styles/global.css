@@ -32,4 +32,10 @@ header .logo {
 
 main {
     padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 1fr 1fr;
+}
+#form {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
