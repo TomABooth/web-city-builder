@@ -23,14 +23,9 @@
     </head>
 
     <body>
-        <header>
-            <img class="logo" src="assets/html_css_js.png" alt="logo" />
-            <h1>Web App</h1>
-        </header>
-
         <main>
             <section id="form">
-                City name: <input id="city-name" />
+                <label> City name: <input id="city-name" /> </label>
                 <label>
                     Architecture:
                     <select id="architecture-select">
@@ -48,12 +43,15 @@
                         <option value="wet">Wet</option>
                     </select>
                 </label>
-                Attractions: <input id="attractions-form" /><button id="attractions-submit">
-                    Add
-                </button>
+                <label>
+                    Attractions: <input id="attractions-form" /><button id="attractions-submit">
+                        Add
+                    </button>
+                </label>
             </section>
-            <section id="city-display">city display</section>
-            <h1 id="city-display-name">Portland</h1>
+            <section id="city-display">
+                <h1 id="city-display-name">Portland</h1>
+            </section>
             <section id="climate-architecture">
                 <div id="climate">
                     <img

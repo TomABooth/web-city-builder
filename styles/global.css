@@ -5,13 +5,6 @@
         'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
 }
 
-body {
-    font-family: var(--primary-font);
-    background: var(--background);
-    display: grid;
-    grid-template-rows: auto 1fr;
-}
-
 header {
     position: sticky;
     top: 0;
@@ -33,14 +26,25 @@ header .logo {
 main {
     padding: 20px;
     display: grid;
-    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-rows: auto auto auto auto;
 }
 #form {
     display: grid;
-    grid-template-rows: 200px 1fr 1fr 1fr;
+    grid-template-rows: 25px 25px 25px 25px;
+}
+
+#city-display {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #climate-architecture {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#attractions-list {
+    background-color: orange;
 }
