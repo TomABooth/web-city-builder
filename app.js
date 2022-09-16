@@ -13,7 +13,7 @@ const climateDisplay = document.getElementById('climate-image');
 // attraction input box and output placement
 const attractList = document.getElementById('attractions-list');
 const attractInput = document.getElementById('attractions-form');
-const attractAddButton = document.getElementById('attractions-submit')
+const attractAddButton = document.getElementById('attractions-submit');
 
 /* State */
 let city = {
@@ -46,7 +46,7 @@ attractAddButton.addEventListener('click', () => {
     city.attractions.push(attract);
     displayAttractions();
     attractInput.value = '';
-})
+});
 
 /* Display Functions */
 // city display
@@ -56,22 +56,17 @@ function displayCity() {
     // architecture change function
     archDisplay.src = 'assets/Arch/' + city.arch + '.jpeg';
     // climate change function
-    climateDisplay.src = 'assets/climate/' city.climate + 'jpeg';
+    climateDisplay.src = 'assets/climate/' + city.climate + '.jpeg';
 }
 // attractions display
 function displayAttractions() {
     attractList.innerHTML = '';
 
-    for(let attract of city.attractions) {
+    for (let attract of city.attractions) {
         const li = document.createElement('li');
         li.textContent = attract;
         attractList.append(li);
     }
 }
 
-
-
-
 // (don't forget to call any display functions you want to run on page load!)
-displayCity();
-displayAttractions();
